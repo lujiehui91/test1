@@ -3,7 +3,6 @@ from pyspark import SparkContext, SparkConf
 from pyspark.streaming import StreamingContext
 import math
 appName ="hui" #你的应用程序名称
-#master = "local" #设置单机
 master = "mesos://zk://192.168.1.140:2181,192.168.1.141:2181,192.168.1.142:2181/mesos" #设置集群
 conf = SparkConf().setAppName(appName).setMaster(master) #配置SparkContext
 sc = SparkContext(conf=conf)
