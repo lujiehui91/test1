@@ -2,10 +2,6 @@
 #
 # /etc/init.d/mesos-master
 #
-# Startup script for mesos-master
-#
-# chkconfig: 2345 20 80
-# description: Starts and stops mesos-master
 
 prog="mesos-master"
 #mesosBin="/usr/sbin/$prog"
